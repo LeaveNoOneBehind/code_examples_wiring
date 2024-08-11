@@ -44,9 +44,62 @@ void loop() {
 
 <!-- enum тут? -->
 
+1. Логічний тип даних - bool
+Може бути True (1) або False (0)
+
+```{c++}
+bool variable_name = True;
+```
+
+2. Символ - char
+
+```{c++}
+char variable_name = 'a';
+```
+
+3. Цілочисельний тип - int
+
+```{c++}
+int variable_name = 23;
+```
+
+4. Число з рухомою крапкою - float
+
+```{c++}
+float variable_name = 12.5;
+```
+
+5. "Пустий" тип даних - void
+
+```{c++}
+void print_hello() {
+    Serial.println("Hello!");
+}
+```
+
 ## Масиви
+> [!IMPORTANT]
+> Індексація починається з 0 і до розмір_масиву - 1!
+
+```{c++}
+int array_name[5] = {1,2,3,4,5};
+
+array_name[0] = 5;
+array_name[4] = 1;
+
+Serial.println(array_name[3]);
+```
 
 ## Стрічки
+
+> [!IMPORTANT]
+> Розмір стрічки, створеної як масив символів (char) буде на 1 більший за кількість символів у ньому - через додавання символу '\0', який означає кінець стрічки
+
+```{c++}
+char string_name[] = "Hello"; // розмір буде дорівнювати 6 НЕ 5
+
+String another_string = "Hello, hello!";
+```
 
 ## Структури та класи
 
